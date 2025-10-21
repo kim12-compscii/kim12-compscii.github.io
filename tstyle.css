@@ -16,7 +16,7 @@ body {
   background-color: #124D1F;
 }
 
-.c-text {
+#c-text {
   background-color: #124D1F;
   padding: 5%;
   margin: 0 auto;
@@ -26,7 +26,7 @@ body {
   border-radius: 8px;
 }
 
-#color {
+#colour {
   background-color: #8A4304;
   width: 200px;
   height: 200px;
@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
 }
 
-#txt {
+#text {
   background-color: #124D1F;
   padding: 5%;
   margin: 5% auto;
