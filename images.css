@@ -4,3 +4,20 @@ body{
   backround-size: cover;
   backround-position: center;
 }
+
+.polaroid{
+  width: 50%;
+  margin: auto;
+  background-color: #black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.polaroid img{
+  width:95%;
+  margin: auto;
+  border-radius: 5px;
+  display: block;
+}
+  
