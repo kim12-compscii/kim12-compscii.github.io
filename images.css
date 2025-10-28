@@ -2,4 +2,5 @@ body{
   background-image: url(https://i.natgeofe.com/n/4ddebecc-42e9-45cc-ae11-f98ab3b92a83/MM10111_231215_10606.jpg);
   backround-repeat: no-repeat;
   backround-size: cover;
+  backround-position: center;
 }
