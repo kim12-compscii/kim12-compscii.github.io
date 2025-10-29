@@ -80,3 +80,20 @@ body {
   background-color: #222222;
   color: white;
     }
+.question{
+    border-style: dotted;
+    backround-color: blue;
+    color: black;
+    font-size: 14px;
+    margin: 30%;
+    padding: 30%;
+    border-width: 20px
+    border-color: red;
+    border-radius: 2px;
+    
+}
+.question p{
+  font-size: 8px;
+  font-style: italic;
+  color: green;
+}
