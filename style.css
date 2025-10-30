@@ -6,7 +6,7 @@ h1 {
   font-size: 1rem;
   text-deoration: underline;
 }
- */
+*/
 /* .name{
   color: palevioletred;
 }
@@ -76,24 +76,26 @@ color: #020122;
 padding: 3%;
 font-size: 1.25rem;
 } */
+
 body {
   background-color: #222222;
   color: white;
-    }
-.question{
-    border-style: dotted;
-    backround-color: blue;
-    color: black;
-    font-size: 14px;
-    margin: 30%;
-    padding: 30%;
-    border-width: 20px
-    border-color: red;
-    border-radius: 2px;
-    
 }
-.question p{
-  font-size: 8px;
+
+.question {
+  border-style: dotted;
+  border-width: 4px;
+  border-color: red;
+  background-color: blue;
+  color: white;
+  font-size: 14px;
+  margin: 10%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.question p {
+  font-size: 14px;
   font-style: italic;
-  color: green;
+  color: lightgreen;
 }
