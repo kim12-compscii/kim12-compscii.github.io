@@ -53,23 +53,25 @@ position: relative;
 line-height: 1.6;
 }
 
+/* Fixed parent/child box visibility and layout /
 .parent-box {
 position: relative;
-background-color: #d8efff;
+background-color: #90cfff; / Darker blue for better visibility /
 padding: 30px;
 margin-top: 25px;
 margin-bottom: 20px;
 border-radius: 8px;
+display: flex; / Added flex to layout child-box neatly /
+flex-direction: column; / Stack child below parent text /
+gap: 15px; / Space between parent text and child-box */
 }
 
 .child-box {
-position: absolute;
-top: 10px;
-right: 20px;
-background-color: #9cd0ff;
-padding: 10px; /* Fixed typo from invalid unit (10png → 10px) /
+position: relative; /* Changed from absolute for proper flow /
+background-color: #6bb8ff; / Slightly darker to stand out /
+padding: 15px; / Fixed typo previously /
 border-radius: 6px;
-width: 45%; / Fixed typo (with → width) */
+width: 100%; / Full width of parent-box for better layout */
 font-size: 0.9rem;
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -97,7 +99,7 @@ margin-bottom: 5px;
 }
 
 .fact-card {
-background-color: #e3f8e0; /* Fixed selector from #fact-card → .fact-card to match HTML class */
+background-color: #e3f8e0; /* Fixed selector to match HTML class */
 border: 2px solid #6fc276;
 padding: 15px;
 border-radius: 8px;
