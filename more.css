@@ -1,12 +1,12 @@
 body {
 font-family: "Segoe UI", sans-serif;
 background-color: #f5f9fc;
-color: #333; /* Fix #11: Dark text for readability on light backgrounds */
+color: #333; /* Dark text for readability on light backgrounds */
 }
 
 #navbar {
 position: fixed;
-top: 0; /* Fix: Ensure navbar sticks to top */
+top: 0; /* Ensure navbar sticks to top */
 width: 100%;
 background-color: #3a7ca5;
 color: white;
@@ -22,7 +22,7 @@ text-align: center;
 background: #c8e8f3;
 color: #2b6777;
 padding: 140px 20px 80px;
-margin-top: 70px; /* Fix #12: Added spacing so hero is below navbar */
+margin-top: 70px; /* Added spacing so hero content is below navbar */
 position: relative;
 z-index: 1;
 }
@@ -42,7 +42,7 @@ margin-bottom: 20px;
 margin: 60px auto;
 width: 80%;
 max-width: 900px;
-color: #333; /* Fix #13: Changed from white to dark for readability */
+color: #333; /* Dark text for readability */
 padding: 30px;
 border-radius: 12px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -67,9 +67,9 @@ position: absolute;
 top: 10px;
 right: 20px;
 background-color: #9cd0ff;
-padding: 10px; /* Fixed '10png' typo /
+padding: 10px; /* Fixed typo from invalid unit /
 border-radius: 6px;
-width: 45%; / Fixed 'with' typo */
+width: 45%; / Corrected typo */
 font-size: 0.9rem;
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -97,7 +97,7 @@ margin-bottom: 5px;
 }
 
 .fact-card {
-background-color: #e3f8e0; /* Fix #14: Corrected from #fact-card to .fact-card */
+background-color: #e3f8e0; /* Corrected selector to match HTML class */
 border: 2px solid #6fc276;
 padding: 15px;
 border-radius: 8px;
