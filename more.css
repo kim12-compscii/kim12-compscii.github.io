@@ -1,11 +1,12 @@
 body {
 font-family: "Segoe UI", sans-serif;
 background-color: #f5f9fc;
-color: #333; /* Fix #11: Added missing semicolon so CSS parses correctly. */
+color: #333; /* Fix #11: Dark text for readability on light backgrounds */
 }
 
 #navbar {
 position: fixed;
+top: 0; /* Fix: Ensure navbar sticks to top */
 width: 100%;
 background-color: #3a7ca5;
 color: white;
@@ -21,7 +22,7 @@ text-align: center;
 background: #c8e8f3;
 color: #2b6777;
 padding: 140px 20px 80px;
-margin-top: 60px;
+margin-top: 70px; /* Fix #12: Added spacing so hero is below navbar */
 position: relative;
 z-index: 1;
 }
@@ -29,19 +30,19 @@ z-index: 1;
 #hero h1 {
 font-size: 3rem;
 margin-bottom: 10px;
-letter-spacing: 1px; /* Fix #12: Added spacing between letters to improve readability of the heading. */
+letter-spacing: 1px;
 }
 
 #hero p {
 font-size: 1.2rem;
-margin-bottom: 20px; /* Fix #13: Added bottom margin to separate from next section. */
+margin-bottom: 20px;
 }
 
 .section {
 margin: 60px auto;
 width: 80%;
 max-width: 900px;
-color: white;
+color: #333; /* Fix #13: Changed from white to dark for readability */
 padding: 30px;
 border-radius: 12px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -49,15 +50,15 @@ position: relative;
 }
 
 .section p {
-line-height: 1.6; /* Fix #14: Added line-height to make paragraphs easier to read. */
+line-height: 1.6;
 }
 
 .parent-box {
-position: relative; /* Fix #15: Added missing semicolon. Ensures next property works. /
-background-color: #d8efff; / Fix #16: Added # for proper color code. /
+position: relative;
+background-color: #d8efff;
 padding: 30px;
 margin-top: 25px;
-margin-bottom: 20px; / Fix #17: Added spacing below parent-box to separate from other content. */
+margin-bottom: 20px;
 border-radius: 8px;
 }
 
@@ -66,10 +67,10 @@ position: absolute;
 top: 10px;
 right: 20px;
 background-color: #9cd0ff;
-padding: 10px; /* Fix #18: Corrected '10png' typo to 10px. Invalid unit would break layout. /
+padding: 10px; /* Fixed '10png' typo /
 border-radius: 6px;
-width: 45%; / Fix #19: Corrected 'with' typo to 'width'. Ensures the box sizes correctly. /
-font-size: 0.9rem; / Fix #20: Adjusted font size to fit inside the parent box properly. */
+width: 45%; / Fixed 'with' typo */
+font-size: 0.9rem;
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -84,7 +85,7 @@ z-index: 5;
 }
 
 .info-box {
-background-color: #f0f9ff; /* Added # for correct color display */
+background-color: #f0f9ff;
 border-left: 6px solid #3a7ca5;
 padding: 15px;
 margin-top: 20px;
@@ -92,12 +93,11 @@ border-radius: 8px;
 }
 
 ul li {
-margin-bottom: 5px; /* Added spacing between list items to prevent them from sticking together. */
+margin-bottom: 5px;
 }
 
-/* Fix: fact-card uses class in HTML, not ID */
 .fact-card {
-background-color: #e3f8e0;
+background-color: #e3f8e0; /* Fix #14: Corrected from #fact-card to .fact-card */
 border: 2px solid #6fc276;
 padding: 15px;
 border-radius: 8px;
@@ -112,5 +112,5 @@ color: white;
 text-align: center;
 padding: 20px;
 position: relative;
-z-index: 10; /* Fixed missing colon to ensure z-index works properly. */
+z-index: 10;
 }
