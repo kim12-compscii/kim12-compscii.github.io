@@ -4,58 +4,57 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elephants of the World</title>
-<link href="more.css" rel="stylesheet" type="text/css"/> <!-- Fix #1: Added the CSS link so the page can apply styles. Without this, all CSS would be ignored. -->
+<link href="more.css" rel="stylesheet" type="text/css"/> <!-- Added CSS link so the page will apply styles correctly -->
 </head>
-<body> <!-- Fix #2: Ensured the opening <body> tag is present. Previously missing, which breaks the HTML structure. -->
+<body> <!-- Added opening <body> tag because it was missing, which fixes page structure -->
 
 <div id="navbar">
-<h2>🐘 Elephants</h2> <!-- Fix #3: Corrected the closing </h2> tag. Missing slash caused the header to break. -->
-<h2>Name</h2> <!-- Fix #4: Removed extra space before Name to keep clean formatting. -->
+  <h2>🐘 Elephants</h2> <!-- Fixed missing slash in closing tag to prevent HTML rendering issues -->
+  <h2>Name</h2> <!-- Cleaned spacing to keep formatting consistent -->
 </div>
 
 <div id="hero">
-<h1>Elephants of the World</h1>
-<p>The gentle giants that shape our ecosystems.</p>
+  <h1>Elephants of the World</h1> <!-- Hero heading, margin adjusted in CSS so it’s not hidden behind navbar -->
+  <p>The gentle giants that shape our ecosystems.</p> <!-- Subtitle, styled to be readable and separated from the heading -->
 </div>
 
 <div class="section">
-<h2>About Elephants</h2>
-<p>Elephants are the largest land mammals on Earth. They are highly intelligent and form strong family bonds led by a matriarch. They use their trunks for eating, drinking, and communication.</p> <!-- Fix #5: Removed extra closing </p> that had no matching opening. Prevents HTML errors. -->
+  <h2>About Elephants</h2>
+  <p>Elephants are the largest land mammals on Earth. They are highly intelligent and form strong family bonds led by a matriarch. They use their trunks for eating, drinking, and communication.</p> <!-- Removed extra or misplaced </p> tag that caused HTML errors -->
 </div>
 
 <div class="parent-box">
-<p>This light blue box is the parent element.</p>
-<div class="child-box">
-<p>This smaller box is <strong>positioned absolutely</strong> inside its parent.</p>
-</div>
-</div>
-
-<div class="section">
-<h2 class="sticky-title">Types of Elephants</h2>
-<p>There are three main species of elephants — each adapted to its own habitat:</p>
-<ul>
-<li><strong>African Savannah Elephant:</strong> Found in open grasslands.</li>
-<li><strong>African Forest Elephant:</strong> Smaller, lives in dense forests.</li>
-<li><strong>Asian Elephant:</strong> Found across South and Southeast Asia.</li>
-</ul> <!-- Fix #6: Closed the ul properly to fix list structure errors. -->
-
-<div class="info-box">
-<p><strong>Fun fact: Elephant ears help regulate body temperature!</strong></p> <!-- Fix #7: Closed the strong and p tags to fix improper sitting. -->
-</div>
+  <p>This light blue box is the parent element.</p>
+  <div class="child-box">
+    <p>This smaller box is <strong>positioned absolutely</strong> inside its parent.</p> <!-- Corrected padding typo (10png → 10px) and width typo (with → width) in CSS -->
+  </div>
 </div>
 
 <div class="section">
-<h2>Fun Facts</h2>
-<div class="facts-container">
-<div class="fact-card">🐘 Elephants can recognize themselves in mirrors.</div> <!-- Fix #8: Added missing closing div for the fact-card. Prevented nesting issues. -->
-<div class="fact-card">💧 They use their trunks like snorkels when swimming.</div>
-<div class="fact-card">🌿 They eat up to 300 pounds of food per day!</div>
-</div>
+  <h2 class="sticky-title">Types of Elephants</h2> <!-- Sticky header; CSS z-index added to stay above other content -->
+  <p>There are three main species of elephants — each adapted to its own habitat:</p>
+  <ul>
+    <li><strong>African Savannah Elephant:</strong> Found in open grasslands.</li>
+    <li><strong>African Forest Elephant:</strong> Smaller, lives in dense forests.</li>
+    <li><strong>Asian Elephant:</strong> Found across South and Southeast Asia.</li>
+  </ul> <!-- Fixed missing closing </ul> in original version -->
+  <div class="info-box">
+    <p><strong>Fun fact: Elephant ears help regulate body temperature!</strong></p> <!-- Fixed missing closing tags for strong and p -->
+  </div>
 </div>
 
-<div id="footer"> <!-- Fix #9: Added missing > for div tag. Prevents the footer from rendering correctly. -->
-<p>© 2025 Elephants of the World</p>
+<div class="section">
+  <h2>Fun Facts</h2>
+  <div class="facts-container">
+    <div class="fact-card">🐘 Elephants can recognize themselves in mirrors.</div> <!-- Fixed incorrect CSS selector (#fact-card → .fact-card) to match HTML class -->
+    <div class="fact-card">💧 They use their trunks like snorkels when swimming.</div>
+    <div class="fact-card">🌿 They eat up to 300 pounds of food per day!</div>
+  </div>
 </div>
 
-</body> <!-- Fix #10: Added closing </body> tag to properly close the body section. -->
+<div id="footer">
+  <p>© 2025 Elephants of the World</p> <!-- Fixed missing > in div tag earlier; ensures footer displays properly -->
+</div>
+
+</body> <!-- Added closing body tag to complete HTML structure -->
 </html>
