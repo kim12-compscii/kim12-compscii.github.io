@@ -53,11 +53,11 @@ line-height: 1.6; /* Fix #14: Added line-height to make paragraphs easier to rea
 }
 
 .parent-box {
-position: relative; /* Fix #15: Added missing semicolon. Ensures next property works. */
-background-color: #d8efff; /* Fix #16: Added # for proper color code. */
+position: relative; /* Fix #15: Added missing semicolon. Ensures next property works. /
+background-color: #d8efff; / Fix #16: Added # for proper color code. /
 padding: 30px;
 margin-top: 25px;
-margin-bottom: 20px; /* Fix #17: Added spacing below parent-box to separate from other content. */
+margin-bottom: 20px; / Fix #17: Added spacing below parent-box to separate from other content. */
 border-radius: 8px;
 }
 
@@ -66,10 +66,10 @@ position: absolute;
 top: 10px;
 right: 20px;
 background-color: #9cd0ff;
-padding: 10px; /* Fix #18: Corrected '10png' typo to 10px. Invalid unit would break layout. */
+padding: 10px; /* Fix #18: Corrected '10png' typo to 10px. Invalid unit would break layout. /
 border-radius: 6px;
-width: 45%; /* Fix #19: Corrected 'with' typo to 'width'. Ensures the box sizes correctly. */
-font-size: 0.9rem; /* Fix #20: Adjusted font size to fit inside the parent box properly. */
+width: 45%; / Fix #19: Corrected 'with' typo to 'width'. Ensures the box sizes correctly. /
+font-size: 0.9rem; / Fix #20: Adjusted font size to fit inside the parent box properly. */
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -95,7 +95,8 @@ ul li {
 margin-bottom: 5px; /* Added spacing between list items to prevent them from sticking together. */
 }
 
-#fact-card {
+/* Fix: fact-card uses class in HTML, not ID */
+.fact-card {
 background-color: #e3f8e0;
 border: 2px solid #6fc276;
 padding: 15px;
