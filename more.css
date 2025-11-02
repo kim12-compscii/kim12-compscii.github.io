@@ -1,109 +1,102 @@
-body {
-font-family: "Segoe UI", sans-serif;
-background-color: #f5f9fc;
-color: #333;
+font-family: "Segoe UI", sans-serif; /* Sets the overall font for the webpage /
+background-color: #f5f9fc; / Light background color for the page /
+color: #333; / Default text color for readability */
 }
 
 #navbar {
-position: fixed;
-width: 100%;
-background-color: #3a7ca5;
-color: white;
-padding: 10px 0;
-z-index: 100;
-display: flex;
-justify-content: space-around;
-align-items: center;
+position: fixed; /* Makes navbar stick to the top of the viewport /
+width: 100%; / Full width across the screen /
+background-color: #3a7ca5; / Dark blue navbar background /
+color: white; / White text for contrast /
+padding: 10px 0; / Vertical padding for spacing /
+z-index: 100; / Ensures navbar is on top of other elements /
+display: flex; / Flex layout for horizontal alignment /
+justify-content: space-around; / Evenly spaces items in navbar /
+align-items: center; / Vertically centers items */
 }
 
 #hero {
-text-align: center;
-background: #c8e8f3;
-color: #2b6777;
-padding: 140px 20px 80px;
-margin-top: -10px;
-/* change 60px to -10px  */
-position: relative;
-z-index: 1;
+text-align: center; /* Centers text horizontally /
+background: #c8e8f3; / Light blue background for hero section /
+color: #2b6777; / Darker text color for contrast /
+padding: 140px 20px 80px; / Top, sides, bottom padding /
+margin-top: -10px; / Adjusted from 60px to -10px to reduce gap with navbar /
+position: relative; / Allows z-index stacking /
+z-index: 1; / Keeps hero above default content but below navbar */
 }
+
 #hero h1 {
-font-size: 3rem;
-margin-bottom: 10px;
+font-size: 3rem; /* Large heading size /
+margin-bottom: 10px; / Space below heading */
 }
+
 #hero p {
-font-size: 1.2rem;
+font-size: 1.2rem; /* Slightly larger paragraph text for readability */
 }
 
 .section {
-margin: 60px auto;
-width: 80%;
-max-width: 900px;
-color: black;
-padding: 30px;
-border-radius: 12px;
-box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-/* add px infront of 0 */
-/* remove space */
-position: relative;
+margin: 60px auto; /* Space above and below section, centers horizontally /
+width: 80%; / Section width relative to viewport /
+max-width: 900px; / Limits maximum width /
+color: black; / Text color for section content /
+padding: 30px; / Internal padding /
+border-radius: 12px; / Rounded corners for visual style /
+box-shadow: 0px 4px 10px rgba(0,0,0,0.1); / Subtle shadow for depth /
+position: relative; / Allows child absolute positioning */
 }
 
 .parent-box {
-  /* add semicolon */
-position: relative;
-background-color: #d8efff;
-padding: 30px;
-margin-top: 25px;
-border-radius: 8px;
+position: relative; /* Ensures child absolute box is positioned relative to this parent /
+background-color: #d8efff; / Light blue background for parent box /
+padding: 30px; / Internal spacing /
+margin-top: 25px; / Space above the parent box /
+border-radius: 8px; / Rounded corners */
 }
 
 .child-box {
-position: absolute;
-top: 10px;
-right: 20px;
-background-color: #9cd0ff;
-padding: 10png;
-border-radius: 6px;
-/* miss spell width (with to width) */
-width: 45%;
-/* add px to 0 */
-box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+position: absolute; /* Positioned relative to parent-box /
+top: 10px; / Distance from top of parent /
+right: 20px; / Distance from right of parent /
+background-color: #9cd0ff; / Slightly darker blue for child box /
+padding: 10px; / Internal spacing; corrected typo from '10png' /
+border-radius: 6px; / Rounded corners /
+width: 45%; / Sets width of child box /
+box-shadow: 0px 2px 6px rgba(0,0,0,0.15); / Subtle shadow for child box */
 }
 
 .sticky-title {
-position: sticky;
-top: 70px;
-background-color: #3a7ca5;
-color: white;
-/* change colour to color */
-padding: 10px;
-border-radius: 8px;
-z-index: 5;
+position: sticky; /* Makes heading stick when scrolling /
+top: 70px; / Distance from top before it sticks /
+background-color: #3a7ca5; / Dark blue background to match navbar /
+color: white; / White text for contrast /
+padding: 10px; / Internal spacing /
+border-radius: 8px; / Rounded corners for style /
+z-index: 5; / Stacks above normal content but below navbar */
 }
 
 .info-box {
-/* add # to color */
-background-color: #f0f9ff;
-border-left: 6px solid #3a7ca5;
-padding: 15px;
-margin-top: 20px;
-border-radius: 8px;
+background-color: #f0f9ff; /* Very light blue background for info box /
+border-left: 6px solid #3a7ca5; / Decorative colored border on the left /
+padding: 15px; / Internal spacing /
+margin-top: 20px; / Space above the info box /
+border-radius: 8px; / Rounded corners */
 }
 
 .fact-card {
-
-background-color: #e3f8e0;
-border: 2px solid #6fc276;
-padding: 15px;
-border-radius: 8px;
-text-align: center;
-position: relative;
-margin-top: 10px;
+background-color: #e3f8e0; /* Light green background for cards /
+border: 2px solid #6fc276; / Green border for definition /
+padding: 15px; / Internal spacing /
+border-radius: 8px; / Rounded corners /
+text-align: center; / Centers text inside card /
+position: relative; / Allows layering if needed /
+margin-top: 10px; / Space between cards */
 }
 
 #footer {
-background-color: #3a7ca5;
-color: white;
-text-align: center;
-padding: 20px;
-position: relative;
-z-index 10;
+background-color: #3a7ca5; /* Dark blue footer background /
+color: white; / White text for contrast /
+text-align: center; / Centers text horizontally /
+padding: 20px; / Internal spacing /
+position: relative; / Sets position context if needed /
+z-index: 10; / Ensures footer stacks above some content if overlapping occurs */
+}
