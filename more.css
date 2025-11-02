@@ -1,12 +1,12 @@
 body {
 font-family: "Segoe UI", sans-serif;
 background-color: #f5f9fc;
-color: #333; /* Fixed from white to dark for readability */
+color: #333;
 }
 
 #navbar {
 position: fixed;
-top: 0; /* Ensure navbar sticks to top */
+top: 0;
 width: 100%;
 background-color: #3a7ca5;
 color: white;
@@ -19,10 +19,10 @@ align-items: center;
 
 #hero {
 text-align: center;
-background: #c8e8f3;
+background-color: #f5f9fc;
 color: #2b6777;
 padding: 140px 20px 80px;
-margin-top: 70px; /* Added spacing so hero content is below fixed navbar */
+margin-top: 70px; /* Space so content sits below fixed navbar */
 position: relative;
 z-index: 1;
 }
@@ -53,25 +53,25 @@ position: relative;
 line-height: 1.6;
 }
 
-/* Fixed parent/child box visibility and layout /
+/* Fixed parent/child layout to prevent overlap and maintain spacing /
 .parent-box {
 position: relative;
-background-color: #90cfff; / Darker blue for better visibility /
+background-color: #d8efff;
 padding: 30px;
 margin-top: 25px;
 margin-bottom: 20px;
 border-radius: 8px;
-display: flex; / Added flex to layout child-box neatly /
-flex-direction: column; / Stack child below parent text /
+display: flex; / Layout child under parent text /
+flex-direction: column;
 gap: 15px; / Space between parent text and child-box */
 }
 
 .child-box {
-position: relative; /* Changed from absolute for proper flow /
-background-color: #6bb8ff; / Slightly darker to stand out /
-padding: 15px; / Fixed typo previously /
+position: relative; /* Removed absolute positioning to fix overlap /
+background-color: #9cd0ff;
+padding: 15px;
 border-radius: 6px;
-width: 100%; / Full width of parent-box for better layout */
+width: 100%; / Fill parent width */
 font-size: 0.9rem;
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -99,7 +99,7 @@ margin-bottom: 5px;
 }
 
 .fact-card {
-background-color: #e3f8e0; /* Fixed selector to match HTML class */
+background-color: #e3f8e0;
 border: 2px solid #6fc276;
 padding: 15px;
 border-radius: 8px;
