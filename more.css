@@ -101,4 +101,5 @@ text-align: center;
 padding: 20px;
 position: relative;
 z-index: 10; /* added colon to fix syntax: CSS properties must be separated from their values by a colon /
-} / added closing curly brace to properly terminate the footer style block for valid CSS */
+} 
+/ added closing curly brace to properly terminate the footer style block for valid CSS */
