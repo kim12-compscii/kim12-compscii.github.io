@@ -18,10 +18,10 @@ align-items: center;
 
 #hero {
 text-align: center;
-background-color: #c8e8f3; /* changed from 'background' to 'background-color' to be more specific and avoid potential conflicts with other background properties /
+background-color: #c8e8f3; /* Ensures hero has the correct background color /
 color: #2b6777;
 padding: 140px 20px 80px;
-margin-top:-10px; / changed from 60px to -10px to remove extra top space and better align hero section under navbar */
+margin-top:-10px; / Adjusts spacing under navbar */
 position: relative;
 z-index: 1;
 }
@@ -39,7 +39,7 @@ font-size: 1.2rem;
 margin: 60px auto;
 width: 80%;
 max-width: 900px;
-color: black; /* changed from white to black because white text is not visible on the light background */
+color: black; /* Makes text visible on light background */
 padding: 30px;
 border-radius: 12px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -47,7 +47,7 @@ position: relative;
 }
 
 .parent-box {
-position: relative; /* added semicolon to properly terminate the previous property, required for valid CSS */
+position: relative; /* Properly separated with semicolon */
 background-color: #d8efff;
 padding: 30px;
 margin-top: 25px;
@@ -59,9 +59,9 @@ position: absolute;
 top: 10px;
 right: 20px;
 background-color: #9cd0ff;
-padding: 10px; /* fixed typo: changed 'png' to 'px', which is the correct unit for pixels /
+padding: 10px; /* Corrected unit to px /
 border-radius: 6px;
-width: 45%; / fixed typo: changed 'with' to 'width' to correctly define element width */
+width: 45%; / Corrected property spelling */
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -69,14 +69,14 @@ box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 position: sticky;
 top: 70px;
 background-color: #3a7ca5;
-color: white; /* corrected spelling: changed 'colour' to 'color', which is the proper CSS property spelling */
+color: white; /* Correct CSS spelling */
 padding: 10px;
 border-radius: 8px;
 z-index: 5;
 }
 
 .info-box {
-background-color: #f0f9ff; /* added '#' at the start of the hex code to make it valid CSS color */
+background-color: #f0f9ff; /* Added # to make valid hex color */
 border-left: 6px solid #3a7ca5;
 padding: 15px;
 margin-top: 20px;
@@ -84,7 +84,7 @@ border-radius: 8px;
 }
 
 .fact-card {
-/* corrected selector: changed '#' to '.' because this targets a class element, not an ID */
+/* Class selector uses dot instead of # */
 background-color: #e3f8e0;
 border: 2px solid #6fc276;
 padding: 15px;
@@ -100,6 +100,6 @@ color: white;
 text-align: center;
 padding: 20px;
 position: relative;
-z-index: 10; /* added colon to fix syntax: CSS properties must be separated from their values by a colon /
-} 
-/ added closing curly brace to properly terminate the footer style block for valid CSS */
+z-index: 10; /* Added colon to properly separate property and value /
+}
+/ Closing brace properly ends footer styles */
