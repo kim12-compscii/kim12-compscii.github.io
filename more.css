@@ -58,17 +58,16 @@ border-radius: 8px;
 }
 
 .child-box {
-position: absolute;
-top: 10px;
-right: 20px;
-background-color: #9cd0ff;
-padding: 10px;
-/* Fixed unit from png to px so padding works correctly /
-border-radius: 6px;
-width: 45%;
-/ Corrected 'with' to 'width' so box size works */
-box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #9cd0ff;
+    padding: 10px; /* fixed unit */
+    border-radius: 6px;
+    width: 45%; /* keeps it smaller than parent */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+
 
 .sticky-title {
 position: sticky;
