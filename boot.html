@@ -39,6 +39,7 @@
         </div>
       </div>
 
+
   <div class="col-md-4 my-2">
     <div class="card">
       <img class="card-img-top img-fluid" src="https://i.natgeofe.com/n/365cab4b-7c9f-487a-a76d-0ec4cb6d433a/emperor-penguin_thumb_square.jpg?wp=1&w=357&h=357" alt="Emperor Penguin" style="height:300px; width:auto; object-fit: cover;">
@@ -65,30 +66,28 @@
 
   </div>
 
-  <!-- Navbar section (collapsible and responsive) -->
+  <!-- Navbar (fixed for Bootstrap 5.3) -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Navbar brand name -->
+    <!-- Navbar brand -->
     <a class="navbar-brand" href="#">Navbar</a>
 
-<!-- Hamburger icon button for small screens -->
+
+<!-- Fixed attributes for Bootstrap 5 -->
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
 
-<!-- Collapsible section with nav links and search bar -->
+<!-- Collapsible nav links -->
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav me-auto">
-    <!-- Active nav link (current page) -->
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
     <li class="nav-item active">
       <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
     </li>
-    <!-- Regular link -->
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
     </li>
-    <!-- Dropdown menu -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
          data-bs-toggle="dropdown" aria-expanded="false">
@@ -101,13 +100,12 @@
         <li><a class="dropdown-item" href="#">Something else here</a></li>
       </ul>
     </li>
-    <!-- Disabled link -->
     <li class="nav-item">
       <a class="nav-link disabled" href="#">Disabled</a>
     </li>
   </ul>
 
-  <!-- Search bar inside navbar -->
+  <!-- Search bar -->
   <form class="d-flex" role="search">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success" type="submit">Search</button>
