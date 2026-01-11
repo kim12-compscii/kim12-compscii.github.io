@@ -1,31 +1,149 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
+body { /*Styling the basic of the website*/
+    background-color: #e7c55b;
+    margin: 0;
+    padding: 0;
+}
+#navbar { /*Syling the navbar*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;              
+    padding: 10px 30px;        
+    background-color: #e7c55b;
+    z-index: 100;
+    display: flex;
+    align-items: center;      
+    justify-content: flex-start;
+    gap: 40px;                
+    box-sizing: border-box;
+}
+#navbar .nav-home { /*Styling the items of the navbar*/
+    font-weight: 900;
+    font-size: 43px;
+    padding: 8px 12px;
+    margin: 0 480px 0 180px;
+}
+#navbar .nav-item { /*Styling the items of the navbar*/
+    font-weight: 400;
+    font-size: 30px;
+    padding: 8px 12px;
 }
 
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
-  background-size: cover;
-  background-position: center;
-  padding: 120px 20px;
+#navbar a { /*Styling the link connecting the websites*/
+    font-size: 28px;
+    color: inherit;
+    text-decoration: none;
+    color: white;
 }
-
-.hero-btn {
-  transition: 0.3s;
+#navbar a:hover { /*Changing the color of the buttom when hovering */
+    color: #ffe300;
 }
-
-.hero-btn:hover {
-  background-color: black;
+.image-container { /*Setting up properties of the image*/
+     position: relative;  
+     display: inline-block;
+     width: 100%;
+}
+.image-container .bg{  /*Styling the background*/
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: brightness(85%) blur(3px);
+}
+.image-container .logo { /*Styling the logo*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    max-width: 90%;
+    height: auto;
+    pointer-events: none;
+    z-index: 2;
+}
+.image-container .name { /*Styling the word inside the background*/
+  position: absolute;
+  top: 69%;              
+  left: 50%;              
+  transform: translate(-50%, -50%);
   color: white;
+  font-size: 52px;      
+  font-weight: bold;
+  z-index: 2;
+}  
+#info { /*Styling the information (OUR STORY)*/
+    padding: 38px 85px;
+    background-color: #f1dea6;
+    color: white;
+    text-align: center;
+    font-weight: 70;
+    font-size: 18px;
+    border-bottom: 4px solid rgb(189, 159, 61);
 }
+.restaurant-image { /*Styling the image of the interior of the restaurant*/
+    display: block;
+    margin: 100px auto;
+    width: 75%;
+    border-radius: 33px;
+}
+#contact-info { /*Styling the contact information (CONTACT US)*/
+    padding: 15px 85px;
+    background-color: #f7d785;
+    color: white;
+    text-align: center;
+    border-top: 6px solid white;
+}
+#contact-info h2 { /*Styling the h2 of the contact info*/
+    font-weight: 700;
+    font-size: 40px;
+}
+#contact-info h3 { /*Styling the h3 of the contact info*/
+    font-weight: 600;
+    font-size: 32px;
 
-.fixed-box {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: black;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 25px;
 }
+#contact-info p { /*Styling the p tag of the contact info*/
+    font-weight: 400;
+    font-size: 23px;
+}
+/*code for groundgurgerbar2.html*/
+#burger2 { /*Styling the menu*/
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 1000;
+    font-size: 35px;
+}    
+.image-container .name2 { /*Styling the word inside the background (MENU)*/
+  position: absolute;
+  top: 69%;
+  left: 50%;              
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;      
+  font-weight: bold;
+  z-index: 2;
+}  
+.blackandblueburger { /*Styling the image inside the Menu*/
+    display: inline-block;
+    width: 27%;
+    padding: 75px 0 0 0;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 6px solid #e7c55b;  
+    margin: 0 0 100px 0;
+}
+#burger2 .burger-item h3{ /*google font*/ /*Styling the google font and the name of the burger inside the menu*/
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top: 147px;
+    margin:0;
+    color:#fff;
+    padding:4px 8px;
+    border-radius:8px;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
