@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background-color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* NAVBAR */
 .navbar {
   width: 100%;
   height: 90px;
@@ -17,6 +17,7 @@ body {
   justify-content: space-between;
   padding: 0 40px;
   border-bottom: 1px solid #ddd;
+  background: white;
 }
 
 .logo {
@@ -32,7 +33,6 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 16px;
 }
 
 .nav-right {
@@ -41,52 +41,44 @@ body {
   font-size: 22px;
 }
 
-.hero {
+/* ABOUT SECTION */
+.about-section {
   width: 100%;
-  height: calc(100vh - 90px);
-  background-image: url("coffee.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  min-height: calc(100vh - 90px);
+  background: linear-gradient(90deg, #f7d7a8 0%, #ddb0a8 60%);
+  padding: 60px 80px;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.15);
-}
-
-.hero-text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.about-section h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 56px;
   text-align: center;
-  color: white;
-  z-index: 1;
+  margin-bottom: 15px;
 }
 
-.hero-text h1 {
-  font-size: 64px;
-  font-weight: 600;
-  letter-spacing: 3px;
+.underline {
+  width: 420px;
+  height: 4px;
+  background: black;
+  margin: 0 auto 50px auto;
 }
 
-.hero-text h2 {
-  margin-top: 18px;
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: 2px;
+/* CONTENT */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
 }
 
-.hero-bottom {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  text-align: center;
-  color: #f2e6d8;
-  font-size: 18px;
-  letter-spacing: 1px;
-  z-index: 1;
+.about-image img {
+  width: 420px;
+  filter: drop-shadow(0 0 40px rgba(255,255,255,0.9));
 }
+
+.about-text {
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
