@@ -1,34 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About</title>
-  <link rel="stylesheet" href="stylecafe.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This Little Cafe - About</title>
+  <link rel="stylesheet" href="stylecafe.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="cafe.html">
+        <img src="assets/logo.png" alt="This Little Cafe TLC logo">
+      </a>
 
-<header>
-  <strong>This Little Cafe</strong>
-  <nav>
-    <a href="cafe.html">Home</a>
-    <a href="about.html" class="active">About Us</a>
-    <a href="menu.html">Menu</a>
-    <a href="workhours.html">Work Hours</a>
-    <a href="contact.html">Location/Contact</a>
-  </nav>
-</header>
+      <nav class="nav">
+        <ul>
+          <li><a href="cafe.html">Home</a></li>
+          <li><a class="active" href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="workhours.html">Work hours</a></li>
+          <li><a href="index.html">Location/Contact</a></li>
+        </ul>
+      </nav>
 
-<div class="section grid-2">
-  <img src="assets/about-cup.png" style="width:100%;">
-  <div>
-    <p>
-      At This Little Cafe, we believe everyone deserves a delicious cup of coffee...
-      supporting local businesses and serving our community since 2010.
-    </p>
-  </div>
-</div>
+      <div class="social">
+        <a class="ig" href="#" aria-label="Instagram">IG</a>
+        <a class="in" href="#" aria-label="LinkedIn">in</a>
+        <a class="fb" href="#" aria-label="Facebook">f</a>
+      </div>
+    </div>
+  </header>
 
-<footer>© This Little Cafe</footer>
+  <main class="wrap">
+    <h1 class="script-title">About This little Cafe</h1>
+    <div class="script-divider"></div>
 
+    <section class="about-grid">
+      <div>
+        <img class="about-img" src="assets/about-cup.png" alt="Coffee cup">
+      </div>
+
+      <div class="about-text">
+        At This Little Cafe, we believe everyone deserves a delicious cup of coffee made from top-quality beans.
+        We use fresh coffee from Velvet Sunrise Coffee Roasters in Stouffville, Ontario, and pair it with fresh
+        baked goods from Batter’s Up Custom Cakes. Reopening inside the Magna Centre in Newmarket, we bring a fresh
+        new look and exciting products while continuing our tradition since 2010. Our focus is on supporting local
+        businesses and serving our community with coffee, pastries, and specialty drinks made just for you.
+      </div>
+    </section>
+  </main>
 </body>
 </html>
