@@ -1,39 +1,81 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Menu</title>
-  <link rel="stylesheet" href="stylecafe.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This Little Cafe - Menu</title>
+  <link rel="stylesheet" href="stylecafe.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="cafe.html">
+        <img src="assets/logo.png" alt="This Little Cafe TLC logo">
+      </a>
 
-<header>
-  <strong>This Little Cafe</strong>
-  <nav>
-    <a href="cafe.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="menu.html" class="active">Menu</a>
-    <a href="workhours.html">Work Hours</a>
-    <a href="contact.html">Location/Contact</a>
-  </nav>
-</header>
+      <nav class="nav">
+        <ul>
+          <li><a href="cafe.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a class="active" href="menu.html">Menu</a></li>
+          <li><a href="workhours.html">Work hours</a></li>
+          <li><a href="index.html">Location/Contact</a></li>
+        </ul>
+      </nav>
 
-<div class="section grid-2">
-  <div class="card">
-    <h3>Pumpkin Tres Leches Latte</h3>
-    <p>$5.50</p>
-  </div>
-  <div class="card">
-    <h3>Pumpkin Bread Latte</h3>
-    <p>$6.00</p>
-  </div>
-</div>
+      <div class="social">
+        <a class="ig" href="#" aria-label="Instagram">IG</a>
+        <a class="in" href="#" aria-label="LinkedIn">in</a>
+        <a class="fb" href="#" aria-label="Facebook">f</a>
+      </div>
+    </div>
+  </header>
 
-<div style="text-align:center;">
-  <a href="moremenu.html"><button>More</button></a>
-</div>
+  <main class="wrap">
+    <h1 class="script-title">Seasonal Menu</h1>
+    <div class="script-divider"></div>
 
-<footer>© This Little Cafe</footer>
+    <section class="seasonal-grid">
+      <article class="seasonal-card">
+        <div class="round-img"><img src="assets/seasonal1.jpg" alt="Pumpkin Tres Leches Latte"></div>
+        <div>
+          <h3>PUMPKIN TRES LECHES LATTE</h3>
+          <p>Creamy and indulgent, this latte mixes pumpkin with a rich tres leches flavor for a smooth, dessert-like sip.</p>
+        </div>
+        <div class="price">$5.50</div>
+      </article>
 
+      <article class="seasonal-card">
+        <div class="round-img"><img src="assets/seasonal2.jpg" alt="Pumpkin Bread Latte"></div>
+        <div>
+          <h3>PUMPKIN BREAD LATTE</h3>
+          <p>A warm, cozy latte blended with sweet pumpkin, vanilla, and fall spices — just like fresh pumpkin bread in a cup.</p>
+        </div>
+        <div class="price">$6.00</div>
+      </article>
+
+      <article class="seasonal-card">
+        <div class="round-img"><img src="assets/seasonal3.jpg" alt="Cinnamon Maple Latte"></div>
+        <div>
+          <h3>CINNAMON MAPLE LATTE</h3>
+          <p>A comforting latte sweetened with pure maple syrup and a sprinkle of cinnamon for a perfectly balanced warmth.</p>
+        </div>
+        <div class="price">$5.50</div>
+      </article>
+
+      <article class="seasonal-card">
+        <div class="round-img"><img src="assets/seasonal4.jpg" alt="Cinnamon Gingerbread Latte"></div>
+        <div>
+          <h3>CINNAMON GINGERBREAD LATTE</h3>
+          <p>Festive and spicy, this latte combines cinnamon with classic gingerbread flavours for a nostalgic holiday taste.</p>
+        </div>
+        <div class="price">$6.50</div>
+      </article>
+    </section>
+
+    <div class="more-btn-wrap">
+      <a class="more-btn" href="moremenu.html">MORE</a>
+    </div>
+  </main>
 </body>
 </html>
