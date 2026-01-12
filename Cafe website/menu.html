@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="stylecafe.css">
 </head>
-
 <body>
-    <div id="navbar">
-        <h2><a class="nav-home" href="index.html">HOME</a></h2>
-        <h2><a class="nav-item" href="menu.html">MENU</a></h2>
-        <h2><a class="nav-item" href="about.html">ABOUT</a></h2>
-        <h2><a class="nav-item" href="contact.html">CONTACT</a></h2>
-    </div>
 
-    <div class="image-container">
-        <img class="bg" src="./images/Burger2.webp">
-        <img class="logo" src="./images/groundburgerbarlogo.png">
-        <h1 class="name2">MENU</h1>
-    </div>
+<header>
+  <strong>This Little Cafe</strong>
+  <nav>
+    <a href="cafe.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="workhours.html">Work Hours</a>
+    <a href="contact.html">Location/Contact</a>
+  </nav>
+</header>
 
-    <div id="burger2">
-        <h1>Burgers</h1>
-        <div class="burger-item">
-            <img class="blackandblueburger" src="./images/blackburger.jpg">
-            <h3>Black & Blue Burger</h3>
-        </div>
-    </div>
+<div class="section grid-2">
+  <div class="card">
+    <h3>Pumpkin Tres Leches Latte</h3>
+    <p>$5.50</p>
+  </div>
+  <div class="card">
+    <h3>Pumpkin Bread Latte</h3>
+    <p>$6.00</p>
+  </div>
+</div>
+
+<div style="text-align:center;">
+  <a href="moremenu.html"><button>More</button></a>
+</div>
+
+<footer>© This Little Cafe</footer>
+
 </body>
 </html>
