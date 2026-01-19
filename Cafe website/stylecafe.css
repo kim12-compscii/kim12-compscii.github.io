@@ -1,373 +1,111 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Allura&display=swap");
-
-:root{
-  --pink:#d6a19c;   /* dusty pink */
-  --white:#fff;
-  --ink:#111;
-  --shadow:0 10px 30px rgba(0,0,0,.18);
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*{ box-sizing:border-box; }
-body{
-  margin:0;
-  font-family: "Montserrat", Arial, sans-serif;
-  color:var(--ink);
-  background:var(--pink);
-}
-a{ color:inherit; }
-
-/* ===== Header ===== */
-.header{
-  background:var(--white);
-  border-bottom:1px solid rgba(0,0,0,.08);
-  position:sticky;
-  top:0;
-  z-index:50;
-}
-.header-inner{
-  max-width:1250px;
-  margin:0 auto;
-  padding:14px 18px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-}
-.brand img{
-  width:120px;
-  height:auto;
-  display:block;
-}
-.nav{
-  flex:1;
-  display:flex;
-  justify-content:center;
-}
-.nav ul{
-  list-style:none;
-  margin:0;
-  padding:0;
-  display:flex;
-  gap:34px;
-  align-items:center;
-}
-.nav a{
-  text-decoration:none;
-  font-weight:800;
-  font-size:22px;
-  color:#000;
-}
-.nav a.active{
-  text-decoration: underline;
-  text-underline-offset: 10px;
-}
-.social{
-  display:flex;
-  gap:10px;
-}
-.social a{
-  width:34px;
-  height:34px;
-  border-radius:8px;
-  border:1px solid rgba(0,0,0,.15);
-  display:grid;
-  place-items:center;
-  text-decoration:none;
-  font-weight:900;
-  background:#fff;
+/* BODY */
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
 }
 
-/* ===== Common sections ===== */
-.wrap{
-  max-width:1250px;
-  margin:0 auto;
-  padding:44px 18px 70px;
-}
-.script-title{
-  font-family:"Allura", cursive;
-  font-size: clamp(46px, 6vw, 92px);
-  text-align:center;
-  margin: 10px 0 6px;
-  letter-spacing:.5px;
-}
-.script-divider{
-  width:min(900px, 92%);
-  height:3px;
-  background:#000;
-  margin: 6px auto 30px;
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* ===== Home / Hero ===== */
-.hero{
-  position:relative;
-  height: calc(100vh - 76px);
-  min-height: 560px;
-  background:url("assets/hero.jpg") center/cover no-repeat;
-  overflow:hidden;
-}
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.22);
-}
-.hero-center{
-  position:absolute;
-  inset:0;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#fff;
-  padding:0 16px;
-}
-.hero-center h1{
-  margin:0;
-  font-weight:800;
-  letter-spacing:1px;
-  font-size: clamp(44px, 7vw, 96px);
-}
-.hero-center p{
-  margin:14px 0 0;
-  font-weight:500;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  font-size: clamp(16px, 2.4vw, 28px);
-}
-.hero-bottom{
-  position:absolute;
-  left:0; right:0;
-  bottom:18px;
-  text-align:center;
-  color:#fff;
-  font-weight:600;
-  text-transform:uppercase;
-  letter-spacing:.8px;
-  font-size: clamp(14px, 2vw, 22px);
-  padding:0 16px;
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
-/* ===== About ===== */
-.about-grid{
-  display:grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap:34px;
-  align-items:center;
-}
-.about-img{
-  width:min(520px, 92%);
-  display:block;
-  margin:0 auto;
-  filter: drop-shadow(0 16px 25px rgba(0,0,0,.18));
-}
-.about-text{
-  font-size:22px;
-  line-height:1.7;
-  text-align:center;
-  max-width:620px;
-  margin:0 auto;
+.navbar a:hover {
+  color: #c48c8c;
 }
 
-/* ===== Seasonal Menu cards ===== */
-.seasonal-grid{
-  display:grid;
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url("https://files.fm/u/77775dpdgt") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 40px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 10%;
+}
+
+.pink {
+  background: #d9a7a2;
+}
+
+/* HEADINGS */
+.script-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* LAYOUTS */
+.two-column {
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:22px;
-}
-.seasonal-card{
-  position:relative;
-  border:2px dashed rgba(255,255,255,.75);
-  border-radius:18px;
-  padding:18px;
-  display:grid;
-  grid-template-columns: 120px 1fr;
-  gap:18px;
-  align-items:center;
-}
-.round-img{
-  width:120px;
-  height:120px;
-  border-radius:999px;
-  overflow:hidden;
-  border:4px solid rgba(255,255,255,.75);
-  box-shadow:var(--shadow);
-}
-.round-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.seasonal-card h3{
-  margin:0 0 10px;
-  color:#fff;
-  font-weight:900;
-  letter-spacing:.8px;
-}
-.seasonal-card p{
-  margin:0;
-  color:#fff;
-  opacity:.95;
-  line-height:1.5;
-  font-weight:500;
-}
-.price{
-  position:absolute;
-  right:14px;
-  bottom:14px;
-  background:rgba(255,255,255,.92);
-  padding:10px 14px;
-  border-radius:10px;
-  font-weight:900;
-  font-size:26px;
-  box-shadow:var(--shadow);
-}
-.more-btn-wrap{
-  display:flex;
-  justify-content:center;
-  margin-top:22px;
-}
-.more-btn{
-  text-decoration:none;
-  border:3px solid #000;
-  color:#000;
-  background:transparent;
-  padding:12px 26px;
-  border-radius:999px;
-  font-weight:900;
-  letter-spacing:1px;
+  gap: 50px;
+  align-items: center;
 }
 
-/* ===== Main menu list ===== */
-.mainmenu{
-  margin-top:10px;
-  color:#fff;
-}
-.mainmenu-grid{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:40px;
-}
-.menu-title{
-  font-weight:900;
-  font-size:28px;
-  margin:0 0 14px;
-}
-.menu-list{
-  list-style:none;
-  padding:0;
-  margin:0;
-  display:grid;
-  gap:14px;
-  font-size:22px;
-  font-weight:700;
-}
-.menu-list li{
-  display:flex;
-  justify-content:space-between;
-  gap:18px;
-}
-.center-sub{
-  text-align:center;
-  margin-top:28px;
-  font-weight:900;
-  font-size:26px;
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
-/* ===== Work hours ===== */
-.hours-grid{
-  display:grid;
-  grid-template-columns: 1fr 1.35fr;
-  gap:28px;
-  align-items:center;
-}
-.hours-left{
-  font-size:26px;
-  font-weight:800;
-  line-height:1.35;
-}
-.hours-left .small{
-  font-size:22px;
-  font-weight:700;
-}
-.hours-right img{
-  width:100%;
-  border-radius:12px;
-  box-shadow:var(--shadow);
-  object-fit:cover;
-}
-.hours-bottom{
-  text-align:center;
-  font-size:24px;
-  font-weight:900;
-  margin-top:22px;
+/* MENU */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
-/* ===== Location/Contact ===== */
-.contact-grid{
-  display:grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap:28px;
-  align-items:center;
-}
-.contact-left{
-  text-align:center;
-}
-.contact-left h3{
-  font-size:40px;
-  font-weight:900;
-  margin:0 0 18px;
-  line-height:1.2;
-}
-.contact-left p{
-  font-size:24px;
-  font-weight:800;
-  line-height:1.5;
-  margin:0 0 18px;
-}
-.contact-left .info{
-  font-size:28px;
-  font-weight:900;
-}
-.monitor{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-.monitor-screen{
-  width:100%;
-  aspect-ratio: 16/9;
-  background:#111;
-  border-radius:18px;
-  padding:14px;
-  box-shadow:var(--shadow);
-}
-.monitor-screen img{
-  width:100%;
-  height:100%;
-  border-radius:12px;
-  object-fit:cover;
-  display:block;
-  background:#fff;
-}
-.monitor-stand{
-  width:52%;
-  height:24px;
-  background:rgba(0,0,0,.15);
-  margin-top:14px;
-  border-radius:12px;
+.menu-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 980px){
-  .about-grid,
-  .seasonal-grid,
-  .hours-grid,
-  .contact-grid,
-  .mainmenu-grid{
-    grid-template-columns:1fr;
-  }
-  .nav ul{ gap:18px; }
-  .nav a{ font-size:18px; }
+/* BUTTON */
+.button {
+  display: block;
+  margin: 60px auto 0;
+  padding: 12px 30px;
+  border: 2px solid black;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  background: black;
+  color: white;
 }
