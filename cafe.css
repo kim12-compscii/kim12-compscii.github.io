@@ -1,0 +1,208 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: Canva Sans;
+  background-color: #f6f6f6;
+  color: #111111;
+}
+
+/* NAVIGATION */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 110px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111111;
+  font-weight: 800;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* PAGE OFFSET */
+main {
+  padding-top: 90px;
+}
+
+/* SECTIONS */
+.section {
+  background-color: #d9a6a1;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.line {
+  height: 6px;
+  background-color: #111111;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HERO */
+.hero {
+  height: calc(100vh - 90px);
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 72px;
+}
+
+.hero p {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about img {
+  width: 400px;
+}
+
+.about p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* MENU */
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  border-width: 3px;
+  border-style: dotted;
+  border-color: #ffffff;
+  padding: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card img {
+  width: 100px;
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ffffff;
+}
+
+.price {
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: 900;
+  border-radius: 12px;
+}
+
+/* HOURS */
+.hours {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.hours img {
+  margin-top: 30px;
+  width: 600px;
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact img {
+  width: 500px;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+}
